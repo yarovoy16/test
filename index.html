@@ -6,11 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document01</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./style.css/">
+    <link rel="stylesheet" href="./style.css/style.css">
   </head>
   <body>
-    <form class="js-speaker-form" name="user-name">
-      <input type="text"/>
+    <!-- form-блочный элемент -->
+    <form class="form js-speaker-form" autocomplete="off">
+      <div class="form-field">
+        <label for="name">Имя</label>
+        <input type="text" name="name" id="name" autofocus placeholder="Ivan">
+      </div>
+
+      <div class="form-field">
+          <label for="tel">Telefon</label>
+          <input type="tel" name="tel" id="tel" autocomplete="off">
+      </div>
+
+      <div class="form-field">
+          <label for="mail">mail</label>
+          <input type="mail" name="mail" id="mail" autocomplete="on">
+      </div>
+       
+        <!-- <fieldset> для групировки.</fieldset> -->
+        <div role="group">
+          <input type="checkbox" name="topic" id="html" value="html">
+          <label for="html">html</label>
+          <input type="checkbox" name="topic" value="css" id="css" checked>
+          <label for="css">css</label>
+          <input type="checkbox" name="topic" value="js" id="js">
+          <label for="css">js</label>
+        </div>
+        <div role="group">
+          <input type="radio" name="position" id="junior" value="junior">
+          <label for="junior">junior</label>
+          <input type="radio" name="position" id="middle" value="middle">
+          <label for="middle">middle</label>
+        </div>
+        
+        <label for="date">Date of ex</label>
+        <input type="datetime-local" name="data" id="date" min="2020-04-12T12:30" max="2030-04-12T12:30">
+        <div>
+
+        </div>
+        <label for="pdf"></label>
+        <input type="file" name="pdf" id="pdf">
+        <div>
+
+        </div>
+        <label for="text">Text</label>
+        <input type="textarea" id="text">
+        <div>
+
+        </div>
+        <!-- <label for="text-big">Input text</label> -->
+        <textarea name="" id="" cols="30" rows="10"> </textarea>
+        <div>
+
+        </div>
+        
+        
+        <button type="submit">Subscribe</button>
+      
     </form>
     <script src="./js/form.js"></script>
   </body>
