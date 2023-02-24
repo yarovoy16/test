@@ -27,43 +27,62 @@
       </div>
        
         <!-- <fieldset> для групировки.</fieldset> -->
-        <div role="group">
-          <input type="checkbox" name="topic" id="html" value="html">
-          <label for="html">html</label>
-          <input type="checkbox" name="topic" value="css" id="css" checked>
-          <label for="css">css</label>
-          <input type="checkbox" name="topic" value="js" id="js">
-          <label for="css">js</label>
+        
+        <div role="group" class="group" >
+          <h2 class="title-topic">Your data</h2>
+          <ul class="topic-options">
+            <li>
+              <input type="checkbox" name="topic" id="html" value="html">
+              <label for="html">html</label>
+            </li>
+
+            <li>
+              <input type="checkbox" name="topic" value="css" id="css" checked>
+              <label for="css">css</label>
+            </li>
+     
+            <li>
+              <input type="checkbox" name="topic" value="js" id="js">
+              <label for="css">js</label>
+            </li>
+          </ul>
+        
         </div>
-        <div role="group">
-          <input type="radio" name="position" id="junior" value="junior">
-          <label for="junior">junior</label>
-          <input type="radio" name="position" id="middle" value="middle">
-          <label for="middle">middle</label>
+
+        <div role="group" class="group">
+          <h2 class="title-topic">Experience</h2>
+          <ul class="topic-options">
+            <li>
+              <input type="radio" name="position" id="junior" value="junior">
+              <label for="junior">junior</label></li>
+            <li>
+              <input type="radio" name="position" id="middle" value="middle">
+              <label for="middle">middle</label></li>
+            <li>
+              <input type="radio" name="position" id="senior" value="senior">
+              <label for="middle">senior</label></li>
+          </ul>
         </div>
         
-        <label for="date">Date of ex</label>
-        <input type="datetime-local" name="data" id="date" min="2020-04-12T12:30" max="2030-04-12T12:30">
-        <div>
-
+        <div class="form-field">
+          <label for="date">Date</label>
+          <input type="datetime-local" name="data" id="date" min="2020-04-12T12:30" max="2030-04-12T12:30">
         </div>
-        <label for="pdf"></label>
-        <input type="file" name="pdf" id="pdf">
-        <div>
-
+      
+        <div class="form-field">
+          <label for="pdf">Load file</label>
+          <input type="file" name="pdf" id="pdf">
         </div>
-        <label for="text">Text</label>
-        <input type="textarea" id="text">
-        <div>
-
+        <div class="form-field">
+          <label for="cooment">Let you comments</label>
+          <textarea name="" id="" cols="30" rows="10"> </textarea>
         </div>
-        <!-- <label for="text-big">Input text</label> -->
-        <textarea name="" id="" cols="30" rows="10"> </textarea>
-        <div>
 
+        <div>
+          <input type="checkbox" id="policy" name="policy">
+          <label for="policy">I'm agree be your clients</label>
         </div>
-        
-        
+        <br>
         <button type="submit">Subscribe</button>
       
     </form>
