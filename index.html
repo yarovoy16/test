@@ -10,20 +10,24 @@
   </head>
   <body>
     <!-- form-блочный элемент -->
-    <form class="form js-speaker-form" autocomplete="off">
+    <form class="form js-speaker-form" autocomplete="off" >
       <div class="form-field">
-        <label for="name">Имя</label>
-        <input type="text" name="name" id="name" autofocus placeholder="Ivan">
+        <input class="form-input" type="text" name="name" id="name" placeholder=" " >
+        <label class="form-label" for="name">Имя</label>
+        <span class="icon-input"></span>
+        
       </div>
 
       <div class="form-field">
-          <label for="tel">Telefon</label>
-          <input type="tel" name="tel" id="tel" autocomplete="off">
+        <input class="form-input" type="tel" name="tel" id="tel" autocomplete="off" placeholder=" " >
+          <label class="form-label" for="tel">Telefon</label>
+          
       </div>
 
       <div class="form-field">
-          <label for="mail">mail</label>
-          <input type="mail" name="mail" id="mail" autocomplete="on">
+        <input class="form-input" type="mail" name="mail" id="mail" autocomplete="on" placeholder=" ">
+          <label class="form-label" for="mail">mail</label>
+          
       </div>
        
         <!-- <fieldset> для групировки.</fieldset> -->
